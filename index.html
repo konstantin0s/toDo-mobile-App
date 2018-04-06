@@ -23,7 +23,7 @@
        <a href="#formPage" data-role="button" data-icon="plus" class="ui-btn-right">New</a>
     </div>
 
-    <!-- <div data-role="content">
+    <div data-role="content">
        <ul data-role="listview" data-theme="c">
          <li><a href="#first">First Element</a>
            <a href="#setasdone"></a>
@@ -35,33 +35,32 @@
            <a href="#setasdone"></a>
          </li>
        </ul>
-    </div> -->
+    </div>
 
-    <form class="" action="" id="form" method="post">
-      <ul data-role="listview" id="taskDetailsFields">
-        <li data-role="list-divider">Task Details:</li>
-        <li data-role="fieldcontain">
-           <label for="taskName">Name:</label>
-           <input type="text" name="taskName" id="taskName" value="" />
-         </li>
-
-         <li data-role="fieldcontain">
-            <label for="taskDescription">Description:</label>
-          <textarea name="taskDescription" id="taskDescription" rows="8" cols="40"></textarea>
-          </li>
-
-          <li data-role="fieldcontain">
-             <label for="taskCompleted">Completed:</label>
-             <select class="" name="taskCompleted" id="taskCompleted" data-role="slider">
-               <option value="no">No</option>
-               <option value="yes">Yes</option>
-             </select>
-           </li>
-           <li data-role="fieldcontain">
-              <label for="taskDueDate">Due Date:</label>
-              <input type="date" name="taskDueDate" id="taskDueDate" data-role="datebox"
-              data-options='{"mode": "calbox", "disableManualInput": true}' />
-            </li>
+    <form action="" method="post" id="form">
+    <ul data-role="listview" id="taskDetailsFields">
+    <li data-role="list-divider">Task details:</li>
+    <li data-role="fieldcontain">
+    <label for="taskName">Name:</label>
+    <input type="text" name="taskName" id="taskName" value="" />
+    </li>
+    <li data-role="fieldcontain">
+    <label for="taskDescription">Description:</label>
+    <textarea cols="40" rows="8" name="taskDescription"
+    id="taskDescription"></textarea>
+    </li>
+    <li data-role="fieldcontain">
+    <label for="taskCompleted">Completed:</label>
+    <select name="taskCompleted" id="taskCompleted" data-role="slider">
+    <option value="no">No</option>
+    <option value="yes">Yes</option>
+    </select>
+    </li>
+    <li data-role="fieldcontain">
+<label for="taskDuedate">Due Date:</label>
+<input name="taskDuedate" id="taskDuedate" type="date" data-role="datebox"
+data-options='{"mode": "calbox", "disableManualInput": true}'>
+</li>
 
          </ul>
     </form>
