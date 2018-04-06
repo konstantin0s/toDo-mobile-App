@@ -23,7 +23,7 @@
        <a href="#formPage" data-role="button" data-icon="plus" class="ui-btn-right">New</a>
     </div>
 
-    <div data-role="content">
+    <!-- <div data-role="content">
        <ul data-role="listview" data-theme="c">
          <li><a href="#first">First Element</a>
            <a href="#setasdone"></a>
@@ -35,7 +35,7 @@
            <a href="#setasdone"></a>
          </li>
        </ul>
-    </div>
+    </div> -->
 
     <form class="" action="" id="form" method="post">
       <ul data-role="listview" id="taskDetailsFields">
@@ -57,6 +57,13 @@
                <option value="yes">Yes</option>
              </select>
            </li>
+           <li data-role="fieldcontain">
+              <label for="taskDueDate">Due Date:</label>
+              <input type="date" name="taskDueDate" id="taskDueDate" data-role="datebox"
+              data-options='{"mode": "calbox", "disableManualInput": true}' />
+            </li>
+
+         </ul>
     </form>
 
     <div data-role="footer" data-position="fixed" data-theme="b">
